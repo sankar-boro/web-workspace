@@ -1,0 +1,14 @@
+{
+  "name": "web-workspace",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "cd packages/custom-react && yarn start",
+    "clean": "rm -rf node_modules && cd packages/custom-react && rm -rf node_modules"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}
