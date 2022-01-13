@@ -1,5 +1,5 @@
 import React from "react";
-import { Hello } from "lily-components/src/index";
+import { Hello } from "lily-components";
 
 export default function App() {
   console.log(Hello())

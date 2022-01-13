@@ -11,7 +11,7 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react",
+    "jsx": "react-jsx",
     "paths": {
       "custom-react/*": ["./packages/custom-react/*"],
       "lily-components/*": ["./packages/lily-components/*"],
