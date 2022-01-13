@@ -1,5 +1,6 @@
-import path from "path";
-import ForkTsCheckerWebpackPlugin from 'fork-ts-checker-webpack-plugin';
+/* eslint-disable @typescript-eslint/no-var-requires */
+
+const path = require('path');
 
 const config = {
   mode: "production",
@@ -36,15 +37,7 @@ const config = {
     compress: true,
     port: 4000,
     hot: true,
-  },
-  plugins: [
-    new ForkTsCheckerWebpackPlugin({
-      async: false,
-      eslint: {
-        files: "./src/**/*",
-      },
-    }),
-  ],
+  }
 };
 
-export default config;
+module.exports = config;

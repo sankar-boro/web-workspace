@@ -13,13 +13,8 @@
     "noEmit": true,
     "jsx": "react",
     "paths": {
-      "custom-react/*": [
-        "./custom-react/*"
-      ],
-      "lily-components/*": [
-        "./lily-components/*"
-      ],
+      "custom-react/*": ["./packages/custom-react/*"],
+      "lily-components/*": ["./packages/lily-components/*"],
     }
   },
-  "include": ["packages"]
 }

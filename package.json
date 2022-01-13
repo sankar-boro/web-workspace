@@ -5,7 +5,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "start": "webpack serve --open",
+    "start": "cd ./packages/custom-react && yarn webpack-cli serve --config webpack.config.cjs",
     "clean": "rm -rf node_modules && cd packages/custom-react && rm -rf node_modules"
   },
   "workspaces": [
