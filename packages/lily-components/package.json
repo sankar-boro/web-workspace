@@ -3,5 +3,8 @@
   "version": "1.0.0",
   "license": "MIT",
   "type": "module",
-  "private": true
+  "private": true,
+  "dependencies": {
+    "ts-results": "^3.3.0"
+  }
 }

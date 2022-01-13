@@ -9,7 +9,6 @@ function createWebPack() {
 
     return alias;
   }, {});
-  console.log(alias);
   return {
     mode: "production",
     entry: "./src/index.tsx",
@@ -49,7 +48,10 @@ function createWebPack() {
       compress: true,
       port: 3000,
       hot: true,
-    }
+    },
+    performance: {
+      hints: false
+    },
   }
 }
 
