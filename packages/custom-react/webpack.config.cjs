@@ -35,7 +35,7 @@ const config = {
       directory: path.join(__dirname, "public"),
     },
     compress: true,
-    port: 4000,
+    port: 3000,
     hot: true,
   }
 };

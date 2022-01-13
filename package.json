@@ -6,7 +6,7 @@
   "private": true,
   "scripts": {
     "start": "cd ./packages/custom-react && yarn webpack-cli serve --config webpack.config.cjs",
-    "clean": "rm -rf node_modules && cd packages/custom-react && rm -rf node_modules"
+    "clean": "cd ./scripts && ./clean-cache.sh"
   },
   "workspaces": [
     "packages/*"
