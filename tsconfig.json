@@ -1,20 +1,21 @@
 {
-  "compilerOptions": {
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
-    "allowSyntheticDefaultImports": true,
-    "skipLibCheck": true,
-    "esModuleInterop": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx",
-    "paths": {
-      "custom-react/*": ["./packages/custom-react/*"],
-      "lily-components/*": ["./packages/lily-components/*"],
+    "extends": "./packages/custom-react/config/tsconfig.json",
+    "exclude": [
+      "build/**/*",
+      "**/build/**/*"
+    ],
+    "compilerOptions": {
+      "jsx": "react",
+      "baseUrl": ".",
+      "paths": {
+        "custom-react/*": ["./packages/custom-react/src/*"],
+        "lily-components/*": ["./packages/lily-components/src/*"]
+      },
+      "skipLibCheck": true,
+      "typeRoots": [
+        "./node_modules/@axia-js/ts",
+        "./node_modules/@types"
+      ]
     }
-  },
-}
+  }
+  

@@ -9,7 +9,7 @@ function createWebPack() {
 
     return alias;
   }, {});
-
+  console.log(alias);
   return {
     mode: "production",
     entry: "./src/index.tsx",
