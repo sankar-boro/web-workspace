@@ -8,12 +8,13 @@
       "jsx": "react",
       "baseUrl": ".",
       "paths": {
-        "custom-react/*": ["./packages/custom-react/src/*"],
-        "lily-components/*": ["./packages/lily-components/src/*"]
+        "custom-react/*": ["packages/custom-react/src/*"],
+        "custom-react": ["packages/custom-react/src"],
+        "lily-components": [ "packages/lily-components/src" ],
+        "lily-components/*": [ "packages/lily-components/src/*" ],
       },
       "skipLibCheck": true,
       "typeRoots": [
-        "./node_modules/@axia-js/ts",
         "./node_modules/@types"
       ]
     }
